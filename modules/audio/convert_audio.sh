@@ -110,3 +110,5 @@ done <<< "$(echo "$SELECTED")"
 echo "Conversion Complete"
 echo "✅ Successful: $SUCCESS"
 echo "❌ Failed: $FAIL"
+
+# future improvements: add order 
