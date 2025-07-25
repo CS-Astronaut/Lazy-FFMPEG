@@ -45,14 +45,12 @@ function audio_menu() {
     CHOICE=$(gum choose --height 15 --cursor "> " --header="Audio Operations:" \
         "🔀 Convert Format" \
         "✂️ Trim Audio" \
-        "🔊 Normalize" \
         "➕ Merge Files" \
         "⬅️ Back")
     
     case "$CHOICE" in
         *"Convert"*) "$BASE_DIR/modules/audio/convert_audio.sh" ;;
         *"Trim"*) "$BASE_DIR/modules/audio/trim_audio.sh" ;;
-        *"Normalize"*) "$BASE_DIR/modules/audio/normalize_audio.sh" ;;
         *"Merge"*) "$BASE_DIR/modules/audio/merge_audio.sh" ;;
         *) show_menu ;;
     esac
@@ -65,7 +63,6 @@ function video_menu() {
         "✂️ Trim Video" \
         "🖼️ Extract Frames" \
         "🔊 Extract Audio" \
-        "📏 Resize" \
         "⬅️ Back")
     
     case "$CHOICE" in
@@ -82,16 +79,11 @@ function video_menu() {
 function image_menu() {
     CHOICE=$(gum choose --height 15 --cursor "> " --header="Image Operations:" \
         "🔀 Convert Format" \
-        "📏 Resize" \
-        "🖼️ Add Watermark" \
-        "🎞️ Create Slideshow" \
         "⬅️ Back")
     
     case "$CHOICE" in
         *"Convert"*) "$BASE_DIR/modules/image/convert_image.sh" ;;
-        *"Resize"*) "$BASE_DIR/modules/image/resize_image.sh" ;;
-        *"Watermark"*) "$BASE_DIR/modules/image/watermark_image.sh" ;;
-        *"Slideshow"*) "$BASE_DIR/modules/image/create_slideshow.sh" ;;
+
         *) show_menu ;;
     esac
 }
@@ -99,7 +91,6 @@ function image_menu() {
 # Utilities Menu
 function utilities_menu() {
     CHOICE=$(gum choose --height 15 --cursor "> " --header="Utilities:" \
-        "🧹 Clean Temp Files" \
         "ℹ️ Media Info" \
         "⬅️ Back")
     
