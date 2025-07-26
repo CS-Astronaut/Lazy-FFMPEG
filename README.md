@@ -47,7 +47,7 @@ Run:
 ## Project Structure:
 ```
 lazy_ffmpeg/
-├── lazy_ffmpeg.sh          # Main menu script
+├── lzfmpg.sh          # Main menu script
 └── modules/
     ├── audio/              # Audio processing scripts
     │   ├── convert_audio.sh
