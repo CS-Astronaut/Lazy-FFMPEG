@@ -13,15 +13,20 @@ FFmpeg is an all-in-one tool for multimedia manipulation. But the deeper I dove 
 
 
 ## Let's Use it!
-Install Dependencies:
 
+Clone The Repo:
+```bash
+clone https://github.com/CS-Astronaut/Lazy-FFMPEG
+cd Lazy-FFMPEG
+```
+
+Install Dependencies:
 ```bash
 # Install gum for TUI
 go install github.com/charmbracelet/gum@latest
 #or
 brew install gum
 ```
-
 ```bash
 # Install FFmpeg for Processings
 sudo apt update && sudo apt install ffmpeg
@@ -29,12 +34,13 @@ sudo apt update && sudo apt install ffmpeg
 
 Give Execution Permission:
 ```bash
+chmod +x lzfmpg.sh
 chmod +x modules/*/*.sh
 ```
 
 Run:
 ```bash
-./lazy_ffmpeg.sh
+./lzfmpg.sh
 ```
 
 
